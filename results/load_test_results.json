@@ -1,0 +1,254 @@
+{
+ "machine": {
+  "python": "3.12.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "workers": 8,
+  "sqlite": "3.43.1"
+ },
+ "runs": [
+  {
+   "agents": 100,
+   "borrowers": 200,
+   "seed_s": 0.05,
+   "agent_reservation": {
+    "reservations": 100,
+    "wall_s": 0.171,
+    "ops_per_s": 585.7,
+    "latency": {
+     "p50_ms": 0.182,
+     "p95_ms": 72.206,
+     "p99_ms": 135.911,
+     "max_ms": 166.43
+    },
+    "invariant_each_agent_reserved_once": true,
+    "ops_per_s_all_runs": [
+     502.7,
+     585.7,
+     608.4
+    ]
+   },
+   "borrower_reservation": {
+    "reservations": 200,
+    "wall_s": 0.246,
+    "ops_per_s": 812.2,
+    "latency": {
+     "p50_ms": 0.194,
+     "p95_ms": 17.302,
+     "p99_ms": 180.81,
+     "max_ms": 243.033
+    },
+    "invariant_each_borrower_reserved_once": true,
+    "ops_per_s_all_runs": [
+     675.6,
+     812.2,
+     1036.4
+    ]
+   },
+   "call_initiation": {
+    "calls_initiated": 100,
+    "wall_s": 0.68,
+    "calls_per_s": 147.0,
+    "safety_evaluations": 33,
+    "safety_eval_latency": {
+     "p50_ms": 1.718,
+     "p95_ms": 445.127,
+     "p99_ms": 649.487,
+     "max_ms": 649.487
+    },
+    "invariant_calls_le_agents": true,
+    "invariant_max_active_calls_per_agent": 1,
+    "invariant_max_active_calls_per_borrower": 1
+   },
+   "safety_controller": {
+    "iterations": 300,
+    "latency": {
+     "p50_ms": 0.506,
+     "p95_ms": 0.678,
+     "p99_ms": 1.108,
+     "max_ms": 13.904
+    }
+   },
+   "event_processing": {
+    "events_processed": 360,
+    "wall_s": 0.489,
+    "events_per_s": 735.7,
+    "latency": {
+     "p50_ms": 0.808,
+     "p95_ms": 6.774,
+     "p99_ms": 154.777,
+     "max_ms": 455.837
+    },
+    "results": {
+     "APPLIED": 300
+    },
+    "duplicates_detected": 60,
+    "duplicates_sent": 60,
+    "invariant_duplicates_all_detected": true,
+    "agents_left_connected": 0
+   }
+  },
+  {
+   "agents": 1000,
+   "borrowers": 2000,
+   "seed_s": 0.12,
+   "agent_reservation": {
+    "reservations": 1000,
+    "wall_s": 0.576,
+    "ops_per_s": 1737.4,
+    "latency": {
+     "p50_ms": 0.141,
+     "p95_ms": 0.377,
+     "p99_ms": 32.018,
+     "max_ms": 572.012
+    },
+    "invariant_each_agent_reserved_once": true,
+    "ops_per_s_all_runs": [
+     1419.8,
+     1737.4,
+     2176.2
+    ]
+   },
+   "borrower_reservation": {
+    "reservations": 2000,
+    "wall_s": 1.111,
+    "ops_per_s": 1800.2,
+    "latency": {
+     "p50_ms": 0.184,
+     "p95_ms": 0.414,
+     "p99_ms": 48.879,
+     "max_ms": 1107.418
+    },
+    "invariant_each_borrower_reserved_once": true,
+    "ops_per_s_all_runs": [
+     1032.6,
+     1800.2,
+     2520.4
+    ]
+   },
+   "call_initiation": {
+    "calls_initiated": 1000,
+    "wall_s": 4.551,
+    "calls_per_s": 219.7,
+    "safety_evaluations": 265,
+    "safety_eval_latency": {
+     "p50_ms": 2.296,
+     "p95_ms": 188.587,
+     "p99_ms": 667.048,
+     "max_ms": 3113.382
+    },
+    "invariant_calls_le_agents": true,
+    "invariant_max_active_calls_per_agent": 1,
+    "invariant_max_active_calls_per_borrower": 1
+   },
+   "safety_controller": {
+    "iterations": 300,
+    "latency": {
+     "p50_ms": 1.229,
+     "p95_ms": 1.872,
+     "p99_ms": 2.455,
+     "max_ms": 18.13
+    }
+   },
+   "event_processing": {
+    "events_processed": 3597,
+    "wall_s": 3.978,
+    "events_per_s": 904.3,
+    "latency": {
+     "p50_ms": 0.786,
+     "p95_ms": 9.304,
+     "p99_ms": 78.468,
+     "max_ms": 2617.603
+    },
+    "results": {
+     "APPLIED": 3000
+    },
+    "duplicates_detected": 597,
+    "duplicates_sent": 597,
+    "invariant_duplicates_all_detected": true,
+    "agents_left_connected": 0
+   }
+  },
+  {
+   "agents": 10000,
+   "borrowers": 20000,
+   "seed_s": 0.73,
+   "agent_reservation": {
+    "reservations": 10000,
+    "wall_s": 2.361,
+    "ops_per_s": 4234.7,
+    "latency": {
+     "p50_ms": 0.143,
+     "p95_ms": 0.322,
+     "p99_ms": 7.654,
+     "max_ms": 2284.162
+    },
+    "invariant_each_agent_reserved_once": true,
+    "ops_per_s_all_runs": [
+     4148.0,
+     4234.7,
+     4513.1
+    ]
+   },
+   "borrower_reservation": {
+    "reservations": 20000,
+    "wall_s": 5.647,
+    "ops_per_s": 3541.6,
+    "latency": {
+     "p50_ms": 0.175,
+     "p95_ms": 0.377,
+     "p99_ms": 9.444,
+     "max_ms": 4897.542
+    },
+    "invariant_each_borrower_reserved_once": true,
+    "ops_per_s_all_runs": [
+     2954.7,
+     3541.6,
+     3617.6
+    ]
+   },
+   "call_initiation": {
+    "calls_initiated": 10000,
+    "wall_s": 33.844,
+    "calls_per_s": 295.5,
+    "safety_evaluations": 282,
+    "safety_eval_latency": {
+     "p50_ms": 57.709,
+     "p95_ms": 1024.286,
+     "p99_ms": 2265.233,
+     "max_ms": 3656.94
+    },
+    "invariant_calls_le_agents": true,
+    "invariant_max_active_calls_per_agent": 1,
+    "invariant_max_active_calls_per_borrower": 1
+   },
+   "safety_controller": {
+    "iterations": 300,
+    "latency": {
+     "p50_ms": 14.102,
+     "p95_ms": 15.906,
+     "p99_ms": 19.237,
+     "max_ms": 28.632
+    }
+   },
+   "event_processing": {
+    "events_processed": 36080,
+    "wall_s": 44.573,
+    "events_per_s": 809.5,
+    "latency": {
+     "p50_ms": 0.845,
+     "p95_ms": 12.898,
+     "p99_ms": 112.307,
+     "max_ms": 5869.111
+    },
+    "results": {
+     "APPLIED": 30000
+    },
+    "duplicates_detected": 6080,
+    "duplicates_sent": 6080,
+    "invariant_duplicates_all_detected": true,
+    "agents_left_connected": 0
+   }
+  }
+ ]
+}

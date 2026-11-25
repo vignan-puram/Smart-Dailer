@@ -1,0 +1,10 @@
+# Local environment and caches: recreated by the setup steps in README.md
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Runtime database: the API recreates data/ on every start
+data/
+
+.env
