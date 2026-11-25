@@ -6,6 +6,8 @@ authority to place calls, idempotent handling of messy telecom webhooks, crash r
 breakers, and a reproducible simulation comparing dialing strategies. Every number in this README
 comes from running the code in this repository.
 
+**GitHub:** https://github.com/vignan-puram/Smart-Dailer (diagrams render there automatically)
+
 ---
 
 ## 1. Project overview
